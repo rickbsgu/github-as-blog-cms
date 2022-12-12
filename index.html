@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Github as Blog CMS Tutorial</title>
+		<script type="module">
+			import {React, ReactDOM} from 'https://unpkg.com/es-react@16.13.1'
+			import htm from 'https://unpkg.com/htm?module'
+			const html = htm.bind(React.createElement)
+			const Posts = (props) => {
+				return html`<div>These will be our posts</div>`
+			}
+			ReactDOM.render(html`<${Posts} />`, document.body)
+		</script>
+	</head>
+	<body>
+		Some other content
+	</body>
+</html>
